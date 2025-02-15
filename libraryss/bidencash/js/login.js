@@ -1,0 +1,1 @@
+$(window).on('load',function(){$(".captcha").on('click',function(event){$.ajax({url:"/captcha_refresh/",dataType:"text",success:function(data){$(".captcha").attr('src',"data:image/png;base64,"+data);$(".text").html(data);}});});});

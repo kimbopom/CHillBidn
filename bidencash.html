@@ -1,0 +1,194 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>BidenCash</title>
+<link rel="apple-touch-icon" sizes="180x180" href="../library/icon/apple-touch-icon.html">
+<link rel="icon" type="image/png" sizes="32x32" href="../library/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../library/icon/favicon-16x16.html">
+<link rel="manifest" href="https://bidenscash.xom/library/icon/site.webmanifest">
+<link rel="mask-icon" href="https://bidenscash.com/library/icon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="library/logos/logo_1.png">
+<link type="text/css" href="../library/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="../library/fap/css/all.min.css" rel="stylesheet">
+<link type="text/css" href="../library/bidencash/css/general.css" rel="stylesheet">
+<script type="text/javascript" src="../library/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../library/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../library/fap/js/pro.min.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/toast.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/bs_dialog.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/general.html"></script>
+</head>
+<body>
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow" style="background-image: url(library/img/bgs/bg_nav2.svg);">
+<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="bidencash.html"><img height="48px" src="https://bidenscash.com/library/logos/logo_1.png"> BidenCash</a>
+<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-text w-100 mr-l15 row nav-stats">
+<div class="col my-auto nav-money">
+Account status: 
+<span class="hrate">Inactive</span>
+<input type="hidden" name="csrfmiddlewaretoken" value="BiWUkLffK2LEQQGcppVMDqXt3gODLkDNFmZWdkpY0Rhhg7y6MZDiAPOHX3K2Wy3Y">
+| <a class="balance-link" href="https://bidenscash.com/balance/" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Loading BTC rate..."><span title=" "> Balance: <span class="text-success">$<span id="user-balance-usd">0.00</span> </span> | (<span id="user-balance-btc">0</span> <i class="text-warning fa-brands fa-bitcoin"></i>) <i class="fa-solid fa-plus text-success addbalance"></i></span></a>
+</div>
+</div>
+<div class="navbar-nav signout-nav">
+<div class="nav-item text-nowrap">
+<a class="nav-link px-3" href="https://bidenscash.com/index.php">Sign out</a>
+</div>
+</div>
+</header>
+<div class="container-fluid">
+<div class="row">
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" style="background-image: url(https://bidenscash.com/library/img/bgs/bg_menu2.svg);">
+<div class="position-sticky pt-3">
+<ul class="nav flex-column">
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="bidencash.html">
+<i class="fa-duotone fa-newspaper"></i> News
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="cards.html">
+    <i class="fas fa-credit-card"></i> Credit Cards
+</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link "
+    href="javascript:alert('Please make a deposit to buy cards!')">
+    <i class="fa fa-trash"></i> DUMPS
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="rules.html">
+<i class="fa-duotone fa-sensor-triangle-exclamation"></i> Rules
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="faq.html">
+<i class="fa-duotone fa-sensor-on"></i> FAQ
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="tickets.html">
+<i class="fa-duotone fa-comments-question"></i> Tickets
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="purchases.html">
+<i class="fa-duotone fa-list"></i> Purchases
+</a>
+</li>
+<hr>
+<li class="nav-item">
+<a class="nav-link " href="balance.html">
+<i class="fa-duotone fa-bitcoin-sign"></i> Balance history
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="settings.html">
+<i class="fa-duotone fa-gear"></i> Settings
+</a>
+</li>
+<li class="nav-item signout-menu">
+<a class="nav-link" href="">
+<i class="fa-solid fa-right-from-bracket"></i> Sign out
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pd-20px nicebg">
+<div class="loadarea"></div>
+<div class="d-flex justify-content-center">
+<div id="promocarousel" class="carousel slide mb-4 carousel-news pd-0" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#promocarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Earn money"></button>
+<button type="button" data-bs-target="#promocarousel" data-bs-slide-to="1" aria-label="Lots of bank cards"></button>
+<button type="button" data-bs-target="#promocarousel" data-bs-slide-to="2" aria-label="Best conditions for suppliers"></button>
+</div>
+<div class="carousel-inner h270">
+<div class="carousel-item h270 active">
+<img src="../library/img/3.jpg" class="d-block w-100" alt="Best conditions for suppliers">
+<a href="https://bidenscash.com/tickets/?ticketitem=7" class="carousel-caption d-md-block">
+<h5>Best conditions for suppliers</h5>
+<p>If you have a lot of material, then you can sell it through us on the most favorable terms for you!<br>
+Click and start selling cards with us!</p>
+</a>
+</div>
+<div class="carousel-item h270">
+<img src="../library/img/1.jpg" class="d-block w-100" alt="Earn money">
+<div class="carousel-caption d-md-block">
+<h5>Earn money</h5>
+<p>Earn money with us! We will provide you with the best product for this!</p>
+</div>
+</div>
+<div class="carousel-item h270">
+<img src="../library/img/2.jpg" class="d-block w-100" alt="Lots of bank cards">
+<div class="carousel-caption d-md-block">
+<h5>Lots of bank cards</h5>
+<p>In our store you can find your favorite BINs!</p>
+</div>
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#promocarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#promocarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+<div class="col p-4 d-flex flex-column position-static bg-white">
+<h3 class="mb-0">Update 8 HOURS AGO</h3>
+<div class="mb-1 text-muted"> </div>
+<p class="card-text mb-auto"></p><p>[UPDATE]  visible UNITED STATES NoRefundable CVR 95%<br>[UPDATE]  preseason INDIA NoRefundable CVR low<br>[UPDATE]  kite UNITED STATES NoRefundable CVR 90%<br>[UPDATE]  voicing UNITED STATES NoRefundable CVR 95%<br>[UPDATE]  waviness MIX Refundable CVR 35%<br>[UPDATE]  dwelling UNITED STATES NoRefundable CVR 85%<br>[UPDATE]  espionage UNITED STATES Refundable CVR 30%<br>[UPDATE]  devouring UNITED KINGDOM Refundable CVR 55%<br>[UPDATE]  visible UNITED STATES NoRefundable CVR 90%<br>[UPDATE]  challenge MIX Refundable 35%<br>[UPDATE]  ludicrous AUSTRALIA Refundable CVR 32%<br>[UPDATE]  defame ITALY Refundable CVR 30%<br>[UPDATE]  dwelling UNITED STATES Refundable CVR 25%<br>[UPDATE]  jitters INDIA Refundable CVR 25%<br>[UPDATE]  secret UNITED STATES Refundable CVR 40%<br>[UPDATE]  railing UNITED STATES Refundable CVR 50%<br>[UPDATE]  secret UNITED STATES Refundable CVR 25%<br>[UPDATE]  thermos CHINA NoRefundable CVR 35%<br>[UPDATE]  tabasco BRAZIL Refundable CVR 41%<br>[UPDATE]  overflow UNITED STATES Refundable CVR 40%<br>[UPDATE]  mop UNITED STATES Refundable CVR 35%<br>[UPDATE]  disjoin Mix Refundable CVR 35%<br>[UPDATE]  plexiglas UNITED STATES Refundable CVR 30%<br>[UPDATE]  disprove UNITED KINGDOM Refundable CVR 55%<br>[UPDATE]  slicing UNITED STATES Refundable CVR 65%<br>[UPDATE]  cavalry SPAIN Refundable CVR 43%<br>[UPDATE]  props MEXICO Refundable CVR 52%<br>[UPDATE]  handyman SOUTH AFRICA Refundable CVR 30%<br>[UPDATE]  unweave MEXICO Refundable CVR 60%<br>[UPDATE]  unmade MIX Refundable CVR 30%<br>[UPDATE]  affection UNITED STATES Refundable CVR 40%<br>[UPDATE]  catlike MIX Refundable CVR 39%<br>[UPDATE]  subtitle CHINA NoRefundable CVR 30%<br>[UPDATE]  excretory BRAZIL Refundable CVR 31%<br>[UPDATE]  canopener UNITED STATES NoRefundable CVR low<br></p><p></p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+<div class="col p-4 d-flex flex-column position-static bg-white">
+<h3 class="mb-0">Update 11 HOURS AGO</h3>
+<div class="mb-1 text-muted"> </div>
+<p class="card-text mb-auto"></p><p>[UPDATE]  sensation MIX Refundable CVR 30%<br>[UPDATE]  carpentry INDIA Refundable CVR 27%<br>[UPDATE]  credible CHINA Refundable CVR 47%<br>[UPDATE]  rocker BRAZIL Refundable CVR 35%<br>[UPDATE]  irritable AUSTRALIA Refundable CVR 38%<br>[UPDATE]  kite UNITED STATES NoRefundable CVR 90%<br>[UPDATE]  compile UNITED STATES Refundable CVR 37%<br>[UPDATE]  unrobed UNITED KINGDOM Refundable CVR 35%<br>[UPDATE]  goldmine SPAIN Refundable CVR 30%<br>[UPDATE]  scooter MIX NoRefundable CVR 98%<br>[UPDATE]  path SOUTH AFRICA Refundable CVR 40%<br>[UPDATE]  UNITED STATES Refundable CVR 50%<br>[UPDATE]  swapping UNITED STATES Refundable CVR 35%<br>[UPDATE]  astonish MEXICO Refundable CVR 55%<br>[UPDATE]  abrasion MIX Refundable CVR 65%<br>[UPDATE]  scat UNITED KINGDOM NoRefundable CVR low<br>[UPDATE]  strained SPAIN NoRefundable CVR low<br>[UPDATE]  secret UNITED STATES Refundable CVR 60%<br></p><p></p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+<div class="col p-4 d-flex flex-column position-static bg-white">
+<h3 class="mb-0">Update 14 HOURS AGO</h3>
+<div class="mb-1 text-muted"></div>
+<p class="card-text mb-auto"></p><p>[UPDATE]  spill UNITED STATES NoRefundable CVR 90%<br>[14 HOURS AGO] agreement AUSTRALIA Refundable CVR 35%<br>[14 HOURS AGO] musky SPAIN Refundable CVR 36%<br>[14 HOURS AGO] darkroom SOUTH AFRICA Refundable CVR 25%<br>[14 HOURS AGO] uneven MEXICO Refundable CVR 50%<br>[14 HOURS AGO] secret UNITED STATES Refundable CVR 50%<br>[14 HOURS AGO] clamshell UNITED STATES NoRefundable CVR 90%<br>[14 HOURS AGO] bust INDIA Refundable CVR 30%<br>[14 HOURS AGO] knoll UNITED KINGDOM Refundable CVR 45%<br>[14 HOURS AGO] vagrancy MIX Refundable CVR 47%<br>[14 HOURS AGO] snorkel UNITED STATES Refundable CVR 35%<br>[14 HOURS AGO] trickster [UNITED STATES NoRefundable CVR 85%<br>[14 HOURS AGO] secret UNITED STATES Refundable CVR 25%<br>[14 HOURS AGO] secret UNITED STATES Refundable CVR 20%<br>[14 HOURS AGO] challenge MIX Refundable 25%<br>[14 HOURS AGO] UNITED STATES Refundable CVR 50%<br>[14 HOURS AGO] dining CHINA Refundable CVR 41%<br>[14 HOURS AGO] clique BRAZIL Refundable CVR 40%<br></p><p></p>
+</div>
+</div>
+</div>
+</div>
+
+</main>
+</div>
+</div>
+
+
+
+<div id="toastbar" class="toast-container position-absolute top-0 end-0 p-3" style="
+    position: fixed !important;
+    z-index: 99999;
+    ">
+    </div>
+
+
+
+</body></html>

@@ -1,0 +1,205 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>BidenCash</title>
+<link rel="apple-touch-icon" sizes="180x180" href="../library/icon/apple-touch-icon.html">
+<link rel="icon" type="image/png" sizes="32x32" href="../library/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../library/icon/favicon-16x16.html">
+<link rel="manifest" href="https://bidenscash.com/library/icon/site.webmanifest">
+<link rel="mask-icon" href="https://bidenscash.com/library/icon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link type="text/css" href="../library/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="../library/fap/css/all.min.css" rel="stylesheet">
+<link rel="icon" href="library/logos/logo_1.png">
+<link type="text/css" href="../library/bidencash/css/general.css" rel="stylesheet">
+<script type="text/javascript" src="../library/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../library/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../library/fap/js/pro.min.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/toast.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/bs_dialog.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/general.html"></script>
+</head>
+<body>
+    
+    
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow" style="background-image: url(library/img/bgs/bg_nav3.svg);">
+
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="balance.html"><img height="48px" src="https://bidenscash.com/library/logos/logo_1.png"> BidenCash</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-text w-100 mr-l15 row nav-stats">
+            <div class="col my-auto nav-money">
+                Account status: <span class="hrate">Inactive</span>
+                <input type="hidden" name="joebidentoken" value="BrZNp5k7ncP2Z0kst5uXhmIFGO2zQQ7gpmNRNiCQ8JSemZOuZRNx1WpzbdUhqjHP">
+                | <a class="balance-link" href="balance.html" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom"><span title=" "> Balance: <span class="text-success">$<span id="user-balance-usd">0.00</span> </span> | (<span id="user-balance-btc">0</span> <i class="text-warning fa-brands fa-bitcoin fa-flip" style="--fa-animation-duration: 3s;"></i>) <i class="fa-solid fa-plus fa-beat text-success addbalance"></i></span></a>
+            </div>
+        </div>
+        <div class="navbar-nav signout-nav">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="index.html">Sign out</a>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" style="background-image: url(library/img/bgs/bg_menu1.svg);">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="bidencash.html">
+                                <i class="fa-duotone fa-newspaper"></i> News
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="cards.html">
+                                <i class="fas fa-credit-card"></i> Credit Cards
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "
+                            href="javascript:alert('Please make a deposit to buy cards!')">
+                            <i class="fa fa-trash"></i> DUMPS
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="rules.html">
+                                <i class="fa-duotone fa-sensor-triangle-exclamation"></i> Rules
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="faq.html">
+                                <i class="fa-duotone fa-sensor-on"></i> FAQ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            
+                            <a class="nav-link active" href="tickets.html">
+                                <i class="fa-duotone fa-comments-question"></i> Tickets
+                                
+                                
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="purchases.html">
+                                <i class="fa-duotone fa-list"></i> Purchases
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            
+                        
+                        
+                        
+                        
+                        <hr>
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link " href="balance.html">
+                                <i class="fa-duotone fa-bitcoin-sign"></i> Balance history
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="settings.html">
+                                <i class="fa-duotone fa-gear"></i> Settings
+                            </a>
+                        </li>
+                        <li class="nav-item signout-menu">
+                            <a class="nav-link" href="">
+                                <i class="fa-solid fa-right-from-bracket"></i> Sign out
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="text-center w-100 mb-2">
+                       
+                    </div>
+                </div>
+            </nav>
+
+            
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pd-20px nicebg">
+                <div class="loadarea"></div>
+                
+
+
+
+<link type="text/css" href="library/select2/select2.min.css" rel="stylesheet">
+<link type="text/css" href="library/select2/select2.theme.min.css" rel="stylesheet">
+<link type="text/css" href="library/bidencash/css/tickets.css" rel="stylesheet">
+
+
+<nav>
+    <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="tickets-table-tab" data-bs-toggle="tab" data-bs-target="#tickets-table" type="button" role="tab" aria-controls="tickets-table" aria-selected="true"><i class="fa-duotone fa-comments-question-check"></i> My tickets list</button>
+        <button class="nav-link" id="open-ticket-tab" data-bs-toggle="tab" data-bs-target="#open-ticket" type="button" role="tab" aria-controls="open-ticket" aria-selected="false" tabindex="-1"><i class="fa-duotone fa-file-pen"></i> Create
+            new ticket</button>
+    </div>
+</nav>
+
+<div id="ticketTabs" class="tab-content">
+    <div class="tab-pane fade active show" id="tickets-table" role="tabpanel" aria-labelledby="#tickets-table-tab">
+        <div class="my-3 p-3 bg-body rounded shadow-sm">
+            <h6 class="border-bottom pb-2 mb-0">Tickets list</h6><br>No tickets found.<br><br> After a review on your tickets support will reach out to you.<br>Do not create a ticket if you don't have any problems.</div>
+    </div>
+    
+    <div class="tab-pane fade" id="open-ticket" role="tabpanel" aria-labelledby="#open-ticket-tab">
+        <div class="w-100">
+            <form id="create-ticket" action="tickets.html">
+                <input type="hidden" name="joebidentoken" value="UN30a2Uoihecpbi5YzAzVVUH8ig7RBM1R26hSMr6iJXtOYNCvPTyD0vrNELUcUv4">
+                <div class="mb-3"><label class="control-label">Ticket reason</label>
+                    <select class="form-select select2item" name="ticket-title" id="ticket-title" tabindex="-1" aria-hidden="true">
+                        <option value="NULL" disabled selected>[Select ticket reason]</option>
+                        
+                        <option value="Technical problem">Technical problem</option>
+                        
+                        <option value="Order problem">Order problem</option>
+                        
+                        <option value="Top-up problem">Top-up problem</option>
+                        
+                        <option value="Problem with purchased credit card">Problem with purchased credit card</option>
+                        
+                        <option value="Cooperation with us">Cooperation with us</option>
+                        
+                        <option value="Commercial offer">Commercial offer</option>
+                        
+                        <option value="I want to become a supplier">I want to become a supplier</option>
+                        
+                    </select>
+		</div>
+                <div id="ticketinput" class="mb-3">
+                    <div class="form-group">
+                        <label for="ticketdescription">Ticket description</label>
+                        <textarea class="form-control" id="ticketdescription" name="ticketdescription" rows="3"></textarea>
+                        <small>For example, detailed description of your problem or CC number. <i>Remember to leave your real telegram.</i><br>DO NOT CREATE TICKETS IF YOU DON'T HAVE ANY ISSUES!</small>
+                        <br><br>
+                        <label for="jabbertg">Telegram</label>
+                        <input class="form-control" type="text" id="jabbertg" name="jabbertg" placeholder="@saynky">
+                      </div>
+                </div>
+                
+                <button type="submit" form="create-ticket" class="btn btn-dark">Create ticket <i class="fa-duotone fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="library/select2/select2.min.js"></script>
+
+            </main>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<div id="toastbar" class="toast-container position-absolute top-0 end-0 p-3" style="
+    position: fixed !important;
+    z-index: 99999;
+    ">
+    </div></body></html>

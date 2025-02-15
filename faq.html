@@ -1,0 +1,391 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>BidenCash</title>
+<link rel="apple-touch-icon" sizes="180x180" href="../library/icon/apple-touch-icon.html">
+<link rel="icon" type="image/png" sizes="32x32" href="../library/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../library/icon/favicon-16x16.html">
+<link rel="manifest" href="https://bidenscash.com/library/icon/site.webmanifest">
+<link rel="mask-icon" href="https://bidenscash.com/library/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="icon" href="library/logos/logo_1.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link type="text/css" href="../library/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="../library/fap/css/all.min.css" rel="stylesheet">
+<link type="text/css" href="../library/bidencash/css/general.css" rel="stylesheet">
+<script type="text/javascript" src="../library/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../library/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../library/fap/js/pro.min.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/toast.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/bs_dialog.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/general.html"></script>
+</head>
+<body>
+    
+    
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow" style="background-image: url(library/img/bgs/bg_nav2.svg);">
+
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="balance.html"><img height="48px" src="https://bidenscash.com/library/logos/logo_1.png" > BidenCash</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-text w-100 mr-l15 row nav-stats">
+            <div class="col my-auto nav-money">
+                Account status: <span class="hrate">Inactive</span>
+                <input type="hidden" name="joebidentoken" value="BrZNp5k7ncP2Z0kst5uXhmIFGO2zQQ7gpmNRNiCQ8JSemZOuZRNx1WpzbdUhqjHP">
+                | <a class="balance-link" href="balance.html" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom"><span title=" "> Balance: <span class="text-success">$<span id="user-balance-usd">0.00</span> </span> | (<span id="user-balance-btc">0</span> <i class="text-warning fa-brands fa-bitcoin fa-flip" style="--fa-animation-duration: 3s;"></i>) <i class="fa-solid fa-plus fa-beat text-success addbalance"></i></span></a>
+            </div>
+        </div>
+        <div class="navbar-nav signout-nav">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="index.html">Sign out</a>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" style="background-image: url(library/img/bgs/bg_menu1.svg);">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page"
+                                href="bidencash.html">
+                                <i class="fa-duotone fa-newspaper"></i> News
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="cards.html">
+                                <i class="fas fa-credit-card"></i> Credit Cards
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="javascript:alert('Please make a deposit to buy cards!')">
+                                <i class="fa fa-trash"></i> DUMPS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="rules.html">
+                                <i class="fa-duotone fa-sensor-triangle-exclamation"></i> Rules
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="faq.html">
+                                <i class="fa-duotone fa-sensor-on"></i> FAQ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            
+                            <a class="nav-link "
+                                href="tickets.html">
+                                <i class="fa-duotone fa-comments-question"></i> Tickets
+                                
+                                
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="purchases.html">
+                                <i class="fa-duotone fa-list"></i> Purchases
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <hr>
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="balance.html">
+                                <i class="fa-duotone fa-bitcoin-sign"></i> Balance history
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="settings.html">
+                                <i class="fa-duotone fa-gear"></i> Settings
+                            </a>
+                        </li>
+                        <li class="nav-item signout-menu">
+                            <a class="nav-link"
+                                href="">
+                                <i class="fa-solid fa-right-from-bracket"></i></i> Sign out
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pd-20px nicebg">
+                <div class="loadarea"></div>
+                
+
+
+<link type="text/css" href="library/bidencash/css/faq.css" rel="stylesheet">
+
+<h2>FAQ</h2>
+
+<div class="accordion" id="FAQAccordion">
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panel-WhatCanIBuyHere">
+            <button class="accordion-button lead fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelItem-WhatCanIBuyHere" aria-expanded="true"
+                aria-controls="panelItem-WhatCanIBuyHere">
+                What can I buy here?
+            </button>
+        </h2>
+        <div id="panelItem-WhatCanIBuyHere" class="accordion-collapse collapse show"
+            aria-labelledby="panel-WhatCanIBuyHere">
+            <div class="accordion-body lead">
+                In our store you can purchase bank cards of any countries. You can find them in the "<a
+                    href="cards.html">Credit Cards</a>" section, which is located in the main navigation menu. You can
+                also buy bank cards at a discount in the appropriate section.<br>
+                In the future, we will expand the range of our store, and here you can buy everything you need for good
+                and productive work.<br>
+                <blockquote class="blockquote fw-bold">
+                    <p>Buying from our store is only available to activated users.</p>
+                    
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panel-TopUpBalance">
+            <button class="accordion-button lead fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelItem-TopUpBalance" aria-expanded="true" aria-controls="panelItem-TopUpBalance">
+                How can I top up my balance?
+            </button>
+        </h2>
+        <div id="panelItem-TopUpBalance" class="accordion-collapse collapse" aria-labelledby="panel-TopUpBalance">
+            <div class="accordion-body lead">
+                You can top up your balance by clicking on it in the top menu, or by clicking on the icon <a
+                    href="/balance/add/"><i class="fa-solid fa-plus fa-beat text-success"></i></a>.<br>
+                Further on the payment page, you need to select the currency that is available for replenishing the
+                balance.<br>
+                We remind you that we do not fix your balance in US dollars. Your balance is stored in bitcoins, and
+                payment for all services will be deducted from you in bitcoins, in accordance with the exchange rate.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panel-BalanceInfo1">
+            <button class="accordion-button lead fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelItem-BalanceInfo1" aria-expanded="true" aria-controls="panelItem-BalanceInfo1">
+                I transferred bitcoins, but the balance was not credited, what should I do?
+            </button>
+        </h2>
+        <div id="panelItem-BalanceInfo1" class="accordion-collapse collapse" aria-labelledby="panel-BalanceInfo1">
+            <div class="accordion-body lead">
+                After transferring bitcoins, you need to <span class="text-success">wait for three network
+                    confirmations</span>.<br>
+                After three confirmations, the money will be credited to your account within 15 minutes.<br>
+                When transferring, indicate a high commission so that your payment is confirmed quickly.<br>
+                <span class="fw-bold text-danger">Remember, in no case do not transfer money to the same address twice!
+                    Our automatic replenishment system only sees the first transaction, and credits funds for it!</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panel-BadBankCard">
+            <button class="accordion-button lead fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelItem-BadBankCard" aria-expanded="true" aria-controls="panelItem-BadBankCard">
+                How can I get a refund for an invalid bank card?
+            </button>
+        </h2>
+        <div id="panelItem-BadBankCard" class="accordion-collapse collapse" aria-labelledby="panel-BadBankCard">
+            <div class="accordion-body lead">
+                After purchasing the card, you have 10 hours to view the card, after 10 hours the card will
+                automatically open and it will be impossible to return money for it.<br>
+                Before opening a bank card, you have a button for checking the card through a checker. When you click
+                this button, <b class="text-success">$1</b> will be frozen on your balance, and if the card is invalid,
+                <b class="text-success">$1</b> will be returned to your balance for checking the card and the cost of
+                the bank card. If the bank card turns out to be valid, you will be charged <b
+                    class="text-success">$1</b>
+                for checking the card through a checker.<br>
+                <b class="text-warning">Do not use the checker all the time. It is not necessary.</b><br>
+                We do not accept refund requests for bank cards, everything happens automatically.<br>
+                If you suspect that the check is not working correctly - write to us, we will definitely check.<br>
+                <div>
+                    <p>The store has a special card verification system after opening.
+                        You can always check the card before opening.</p>
+                    <table class="table table-bordered table-hover border-primary text-center container mt-3 mb-3">
+                        <caption class="text-secondary text-center w-100">Refund limit table</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Status</th>
+                                <th scope="col">Refund per day</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold">Without status</td>
+                                <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Gold</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Platinum</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Infinite</td>
+                                <td class="fw-bold">Unlimited</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panel-CheckerTypes">
+            <button class="accordion-button lead fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelItem-CheckerTypes" aria-expanded="true" aria-controls="panelItem-CheckerTypes">
+                What is the difference between the Simple check method and Authorize check method?
+            </button>
+        </h2>
+        <div id="panelItem-CheckerTypes" class="accordion-collapse collapse" aria-labelledby="panel-CheckerTypes">
+            <div class="accordion-body lead">
+                <span class="fw-bold">Simple</span> - this checker method checks the card without debiting funds by
+                linking the card for payment to various merchants.<br>
+                <br>
+                <span class="fw-bold">Authorize</span> - this check method freezes a random amount on the user's bank
+                card, and thus determines the validity of the card.<br>
+                <span class="text-danger fw-bold">ATTENTION! BECAUSE OF THIS METHOD THE BANK MAY BLOCK THE CARD!</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panel-rating">
+            <button class="accordion-button lead fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelItem-rating" aria-expanded="true" aria-controls="panelItem-rating">
+                What is a rating and what does it depend on?
+            </button>
+        </h2>
+        <div id="panelItem-rating" class="accordion-collapse collapse" aria-labelledby="panel-rating">
+            <div class="accordion-body lead">
+                You can see your rating by going to <a href="settings.html">settings</a>.<br>
+                The status is issued for one month. If you have not saved your status at the end of the month, it will
+                be reset.<br>
+                The rating on our website has only 4 statuses: Classic, Gold, Platinum and Infinite.
+                <table class="table table-bordered table-hover border-primary text-center container mt-3 mb-3">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Classic</th>
+                            <th scope="col">Gold</th>
+                            <th scope="col">Platinum</th>
+                            <th scope="col">Infinite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Card preorder</td>
+                            <td><i class="fa-solid fa-x text-danger"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>show CC number</td>
+                            <td>Only BIN</td>
+                            <td>BIN + last 4 digits</td>
+                            <td>BIN + last 4 digits</td>
+                            <td>BIN + last 4 digits</td>
+                        </tr>
+                        <tr>
+                            <td>Base availability</td>
+                            <td>After 5 hours</td>
+                            <td>After 5 hours</td>
+                            <td>After 5 hours</td>
+                            <td>immediately</td>
+                        </tr>
+                        <tr>
+                            <td>Show address</td>
+                            <td><i class="fa-solid fa-x text-danger"></i></td>
+                            <td><i class="fa-solid fa-x text-danger"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Show holder name</td>
+                            <td><i class="fa-solid fa-x text-danger"></i></td>
+                            <td><i class="fa-solid fa-x text-danger"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                In order to get the next rating status, you need to spend a certain amount of money.<br><br>
+                <b>Q:</b> What is a status, and how can I save it for the next month?<br>
+                <b>A:</b> Status is the amount of money you spent in the last 30 days. Each status gives you certain advantages in our store, and we will expand their list.<br>
+                <br>
+                <b>Q:</b> Will the status from the funds spent on cards that are refunded be considered?<br>
+                <b>A:</b> No, we only count the money spent in the store. For a refund, you get funds back to your balance.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panel-PageTypesCC">
+            <button class="accordion-button lead fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelItem-PageTypesCC" aria-expanded="true" aria-controls="panelItem-PageTypesCC">
+                What is the difference between Cards and HOT Cards sections?
+            </button>
+        </h2>
+        <div id="panelItem-PageTypesCC" class="accordion-collapse collapse" aria-labelledby="panel-PageTypesCC">
+            <div class="accordion-body lead">
+                At HOT Cards, we have cards that expire this or next month.<br>
+                There is a 50% discount on these cards.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panel-RatingItems">
+            <button class="accordion-button lead fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelItem-RatingItems" aria-expanded="true" aria-controls="panelItem-RatingItems">
+                What is the base rating and how is it formed?
+            </button>
+        </h2>
+        <div id="panelItem-RatingItems" class="accordion-collapse collapse" aria-labelledby="panel-RatingItems">
+            <div class="accordion-body lead">
+                Each user can rate the purchased card.<br>
+                Based on the ratings (thumbs up, thumbs down) - we generate the overall rating of the base with the
+                cards.<br>
+                The rating is displayed in the table next to the database name.<br>
+                <div class="w-100 text-center" style="font-size: 2rem;">
+                    <i class="fa-duotone fa-signal" style="--fa-primary-color: green;"></i>
+                    <i class="fa-duotone fa-signal-strong" style="--fa-primary-color: #20b904;"></i>
+                    <i class="fa-duotone fa-signal-good" style="--fa-primary-color: #ffca00;"></i>
+                    <i class="fa-duotone fa-signal-fair" style="--fa-primary-color: orange;"></i>
+                    <i class="fa-duotone fa-signal-weak" style="--fa-primary-color: red;"></i>
+                    <i class="fa-duotone fa-signal" style="--fa-secondary-opacity:1; --fa-primary-opacity: 0.4;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

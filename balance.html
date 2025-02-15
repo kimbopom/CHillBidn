@@ -1,0 +1,212 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>BidenCash</title>
+<link rel="apple-touch-icon" sizes="180x180" href="../library/icon/apple-touch-icon.html">
+<link rel="icon" type="image/png" sizes="32x32" href="library/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="library/icon/favicon-16x16.html">
+<link rel="icon" href="library/logos/logo_1.png">
+<link rel="manifest" href="https://bidenscash.com/library/icon/site.webmanifest">
+<link rel="mask-icon" href="https://bidenscash.com/library/icon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link type="text/css" href="../library/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="../library/fap/css/all.min.css" rel="stylesheet">
+<link type="text/css" href="../library/bidencash/css/general.css" rel="stylesheet">
+<script type="text/javascript" src="../library/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../library/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../library/fap/js/pro.min.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/toast.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/bs_dialog.js"></script>
+<script type="text/javascript" src="../library/bidencash/js/general.html"></script>
+    
+    
+</head>
+<body>
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow" style="background-image: url(https://bidenscash.com/library/img/bgs/bg_nav4.svg);">
+<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="bidencash.html"><img height="48px" src="library/logos/logo_1.png"> BidenCash</a>
+<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-text w-100 mr-l15 row nav-stats">
+<div class="col my-auto nav-money">
+Account status: 
+<span class="hrate">Inactive</span>
+<input type="hidden" name="csrfmiddlewaretoken" value="NMTK3AinnVeG4dDGPLHuusF9UQqaWUJ3RQWMW9s6DKKjuuvAclp0rRwnODmz789e">
+| <a class="balance-link" href="balance.html" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Loading BTC rate..."><span title=" "> Balance: <span class="text-success">$<span id="user-balance-usd">0.00</span> </span> | (<span id="user-balance-btc">0</span> <i class="text-warning fa-brands fa-bitcoin"></i>) <i class="fa-solid fa-plus text-success addbalance"></i></span></a>
+</div>
+</div>
+<div class="navbar-nav signout-nav">
+<div class="nav-item text-nowrap">
+<a class="nav-link px-3" href="index.html">Sign out</a>
+</div>
+</div>
+</header>
+<div class="container-fluid">
+<div class="row">
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" style="background-image: url(https://bidenscash.com/library/img/bgs/bg_menu2.svg);">
+<div class="position-sticky pt-3">
+<ul class="nav flex-column">
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="bidencash.html">
+<i class="fa-duotone fa-newspaper"></i> News
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="cards.html">
+    <i class="fas fa-credit-card"></i> Credit Cards
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="javascript:alert('please deposit money to buy cards!')">
+    <i class="fa fa-trash"></i> DUMPS
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="rules.html">
+<i class="fa-duotone fa-sensor-triangle-exclamation"></i> Rules
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="faq.html">
+<i class="fa-duotone fa-sensor-on"></i> FAQ
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="tickets.html">
+<i class="fa-duotone fa-comments-question"></i> Tickets
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="purchases.html">
+<i class="fa-duotone fa-list"></i> Purchases
+</a>
+</li>
+<hr>
+<li class="nav-item">
+<a class="nav-link " href="balance.html">
+<i class="fa-duotone fa-bitcoin-sign"></i> Balance history
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="settings.html">
+<i class="fa-duotone fa-gear"></i> Settings
+</a>
+</li>
+<li class="nav-item signout-menu">
+<a class="nav-link" href="">
+<i class="fa-solid fa-right-from-bracket"></i></i> Sign out
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pd-20px nicebg">
+<div class="loadarea"></div>
+<div class="row">
+<div class="col-sm">
+<h2>Top up balance with Bitcoin</h2>
+<div class="alert alert-danger" role="alert">
+Remember that you can use this address for replenishment only once. If you make more than 1 transaction to
+this address, then we cannot guarantee that all payments will be credited.
+</div>
+<div style="display:none;" id="alertpay" class="alert alert-warning" role="alert">
+We have received payment from you. You need to wait until the payment is confirmed. It usually takes no more than an hour. Do not send any more money to this address.
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="mb-3">
+<label for="address" class="form-label"><i style="color: #ef8e19;" class="fa-brands fa-bitcoin"></i> Bitcoin address</label>
+<div class="input-group">
+    <input type="text" class="form-control" id="address" value="bc1qx439u40q6m6fdm7cja7wq0lsssnefyatltmm6a" readonly>
+    <button class="btn btn-dark" type="button" id="copywalletbtn">Copy</button>
+</div>
+<div id="addressHelp" class="form-text">You need to transfer money to this address in one
+transaction.</div>
+</div>
+<div class="mb-3">
+<label for="moneyamount" class="form-label">Minimum Deposit</label>
+<div class="input-group">
+<input type="text" class="form-control clickcopy" id="moneyamount" aria-describedby="moneyamountHelp" value="100 USD" readonly="" aria-describedby="copyamountbtn">
+<button class="btn btn-dark clickcopy" type="button" id="copyamountbtn"> Copy</button>
+</div>
+<div id="moneyamountHelp" class="form-text">You need to wait for 3 confirmation after you  pay.
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="d-flex">
+<div class="flex-fill p-4 text-center"><p>
+<a rel='nofollow' href='#' border='0' style='cursor:default'><img src='https://chart.googleapis.com/chart?cht=qr&amp;chl=34fQpWkP9QMVp6UkpGu6jdj9rqoSVhPK6U&amp;chs=200x200&amp;choe=UTF-8&amp;chld=L|2' alt=''></a>
+You can also pay your bill using this QR code. It is needed to pay through mobile bitcoin wallets.</p>
+<img src="qrcod.png">
+
+</div>
+</div>
+</div>
+<p class="text-muted">Payment should appear within 15 minutes after payment. The payment is credited after 3 network confirmations.
+    <br><br>Live payment status update:
+</p>
+<table class="table">
+<tbody>
+<tr>
+<td align="left"><span class="text">State</span></td>
+<td align="center"><span class="text">:</span></td>
+<td align="left"><span class="badge badge-light" id="state" style="color:blue"></span></td>
+</tr>
+<tr>
+<td align="left"><span class="text">TXID</span></td>
+<td align="center"><span class="text">:</span></td>
+<td align="left"><span class="badge badge-light" id="txid" style="color:blue"></span></td>
+</tr>
+<tr>
+<td align="left"><span class="text">BTC Amount Sent</span></td>
+<td align="center"><span class="text">:</span></td>
+<td align="left"><span class="badge badge-light" id="amount_loaded" style="color:blue"></span> </td>
+</tr>
+<tr>
+<td align="left"><span class="text">Time Left</span></td>
+<td align="center"><span class="text">:</span></td>
+<td align="left"><span class="badge badge-light" id="time_left" style="color:blue"></span> </td>
+</tr>
+</tbody>
+</table>
+<input type="hidden" name="csrfmiddlewaretoken" value="NMTK3AinnVeG4dDGPLHuusF9UQqaWUJ3RQWMW9s6DKKjuuvAclp0rRwnODmz789e">
+<button class="btn btn-danger" id="cancelpayment">Check payment</button>
+<script src="../library/jquery/addons/jquery-qrcode-0.18.0.min.html"></script>
+<script src="../library/bidencash/js/pay_process.html"></script>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+<script>
+    document.getElementById("copywalletbtn").addEventListener("click", function() {
+        var copyText = document.getElementById("address");
+        var button = document.getElementById("copywalletbtn");
+        
+        navigator.clipboard.writeText(copyText.value).then(() => {
+            button.textContent = "Copied!";
+            setTimeout(() => { button.textContent = "Copy"; }, 1500);
+        }).catch(err => {
+            console.error("Failed to copy: ", err);
+            // Fallback for older browsers
+            copyText.select();
+            document.execCommand("copy");
+            button.textContent = "Copied!";
+            setTimeout(() => { button.textContent = "Copy"; }, 1500);
+        });
+    });
+    </script>
+
+
+<script>
+    document.getElementById("cancelpayment").addEventListener("click", function() {
+        location.reload();
+    });
+    </script>
+
+</body>
+
+</html>
